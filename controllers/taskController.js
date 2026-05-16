@@ -29,9 +29,7 @@ export const getTasks = async (req, res) => {
       user: req.user._id,
     });
 
-    res.status(201).json({
-      tasks,
-    });
+    res.status(200).json(tasks);
   } catch (error) {
     res.status(500).json({
       message: error.message,
