@@ -13,6 +13,9 @@ const taskSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    dueDate: {
+      type: Date,
+    },
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
